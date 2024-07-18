@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Karma:wght@300;400;500;600;700&family=Mirza:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-brands fa-spotify" style="font-size: 1.5rem;"></i>
+                    <a href="#" style="opacity: 1; ">Spotify</a>
+                </div>
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#" style="opacity: 1;">Home</a>
+                </div>
+                <div class="nav-option">
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search" class="search">
+                    </div>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">
+                            Create your first playlist
+                        </p>
+                        <p class="box-p2">
+                            It's easy, we'll help you
+                        </p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">
+                            Let's find some podcasts to follow
+                        </p>
+                        <p class="box-p2">
+                            We'll keep you updated on new episodes
+                        </p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>          
+            <div class="legal">
+                <div class="legalwords">
+                    <h6>Legal</h6>
+                    <h6>Safety&Privacy Center</h6>
+                    <h6>Privacy Policy</h6>
+                    <h6>Cookies</h6>
+                    <h6>About Ads</h6>
+                    <h6>Accessibility</h6>
+                </div>
+                <h6 style="margin-left: 2.6rem; font-size: 12px; font-weight: 200; margin-top: 14px;">Cookies</h6>
+                <div class="language">
+                    <div><i class="fa-solid fa-globe"></i><p style="margin-top: 0px;">English</p></div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+        <div class="bgm">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="/assets/backward_icon.png" alt="">
+                    <img src="/assets/forward_icon.png" alt="" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"
+                            style="margin-right: 9px;"></i>Install app</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            
+                <h2 class="artistname">Popular Artists</h2>
+                <div class="singercontainer">
+                    <div class="singerimg">
+                        <img src="/assets/pritam.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=spotify+cover+image+of+pritam&sca_esv=02a4ee299fbe318f&sca_upv=1&sxsrf=ADLYWILCWHVMz0haIkhya_cpUx6LlBNoFw%3A1720643509440&ei=te-OZtLTGo2gseMP8ouquA8&ved=0ahUKEwiSgqnJqJ2HAxUNUGwGHfKFCvcQ4dUDCBA&uact=5&oq=spotify+cover+image+of+pritam&gs_lp=Egxnd3Mtd2l6LXNlcnAiHXNwb3RpZnkgY292ZXIgaW1hZ2Ugb2YgcHJpdGFtMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRifBUjxFVDjBVjBEnABeACQAQCYAcABoAH-B6oBAzAuNrgBA8gBAPgBAZgCBqACmwjCAgQQIxgnwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAggQABiABBiiBMICBxAhGKABGAqYAwCIBgGSBwMwLjagB7od&sclient=gws-wiz-serp#vhid=cHMUCCXpUz4TrM&vssid=l">Pritam</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/arjit.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=spotify+cover+image+of+arijit+singh&sca_esv=02a4ee299fbe318f&sca_upv=1&sxsrf=ADLYWIKtja5z_Zuesh7_E0Ty2pObLAsDAQ%3A1720643514423&ei=uu-OZv7JGdePseMP2MuNsAw&oq=spotify+cover+image+of+arjit&gs_lp=Egxnd3Mtd2l6LXNlcnAiHHNwb3RpZnkgY292ZXIgaW1hZ2Ugb2YgYXJqaXQqAggAMgcQIRigARgKMgcQIRigARgKMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIxyBQ6AhY0xNwAngBkAEAmAHkBaABnxOqAQkzLTIuMS4xLjG4AQHIAQD4AQGYAgegAtkTwgIKEAAYsAMY1gQYR8ICBBAjGCfCAgYQABgWGB7CAggQABiABBiiBMICBRAhGKABmAMAiAYBkAYIkgcJMi4zLTIuMi4xoAfHKA&sclient=gws-wiz-serp#vhid=iQMg7FF5IdnYTM&vssid=l">Arjith
+                            Singh</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/ar rehaman.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwTE83tTRg9OJMLFIoSszITcwDAEOFBmo&q=ar+rahman&oq=ar+rehman&gs_lcrp=EgZjaHJvbWUqDwgBEC4YChiDARixAxiABDIGCAAQRRg5Mg8IARAuGAoYgwEYsQMYgAQyCQgCEAAYChiABDIJCAMQABgKGIAEMgkIBBAAGAoYgAQyCQgFEAAYChiABDIMCAYQABgKGLEDGIAEMgkIBxAAGAoYgAQyCQgIEAAYChiABNIBCTUyNTRqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8">A.R.Rahman</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/anirudh.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a href="/assets/spb.jpeg" alt="">
+                            <a
+                                href="https://www.google.com/search?q=Anirudh+Ravichendar&sca_esv=289b83ef89ab5e90&sca_upv=1&sxsrf=ADLYWIIuuD36rKIV2f5cl1HtsvtJEIE9lg%3A1720552705240&ei=AY2NZqWxDquhseMP5P6q6Ag&ved=0ahUKEwjltcCm1pqHAxWrUGwGHWS_Co0Q4dUDCBA&uact=5&oq=Anirudh+Ravichendar&gs_lp=Egxnd3Mtd2l6LXNlcnAiE0FuaXJ1ZGggUmF2aWNoZW5kYXIyChAuGIAEGLEDGA0yDRAuGIAEGLEDGIMBGA0yBxAAGIAEGA0yChAAGIAEGLEDGA0yBxAAGIAEGA0yBxAAGIAEGA0yBxAuGIAEGA0yBxAAGIAEGA0yBxAAGIAEGA0yBxAAGIAEGA0yGRAuGIAEGLEDGA0YlwUY3AQY3gQY4ATYAQFI3wtQAFgAcAB4AZABAJgBsQGgAbEBqgEDMC4xuAEDyAEA-AEC-AEBmAIBoALFAZgDALoGBggBEAEYFJIHAzAuMaAH-Q4&sclient=gws-wiz-serp">Anirudh
+                                Ravichendar</a>
+                            <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/spb.jpeg" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=spb&sca_esv=289b83ef89ab5e90&sca_upv=1&sxsrf=ADLYWILYt7YMOFUoHWwpkR3bE-932pP3Gw%3A1720552826281&ei=eo2NZo_xEIGUseMP9760gAI&gs_ssp=eJzj4tTP1TcwqyowMDJg9GIuLkgCACSJBFQ&oq=spb&gs_lp=Egxnd3Mtd2l6LXNlcnAiA3NwYioCCAAyDhAuGIAEGJECGLEDGIoFMg4QLhiABBiRAhixAxiKBTIQEC4YgAQY0QMYQxjHARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDINEAAYgAQYsQMYgwEYCjIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIdEC4YgAQYkQIYsQMYigUYlwUY3AQY3gQY4ATYAQFIsRVQAFjHCnAAeAGQAQCYAZ4BoAG0A6oBAzAuM7gBAcgBAPgBAZgCA6AC3QPCAgQQIxgnwgIKEC4YgAQYQxiKBcICDRAuGIAEGEMY1AIYigXCAgoQABiABBhDGIoFwgILEC4YgAQYkQIYigXCAhAQABiABBixAxhDGIMBGIoFmAMAugYGCAEQARgUkgcDMC4zoAf7MQ&sclient=gws-wiz-serp">S.P.Bala
+                            Subramanyam</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/justin bieber.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=justin+bieber&sca_esv=289b83ef89ab5e90&sca_upv=1&sxsrf=ADLYWIJwmdcQgHmTm2r5dm42pwRkhfSp2A%3A1720552728437&ei=GI2NZpawGvmeseMPy62s4AI&gs_ssp=eJzj4tLP1TcwKzcqzjM1YPTizSotLsnMU0jKTE1KLQIAcHYIsw&oq=Justin+Bieber&gs_lp=Egxnd3Mtd2l6LXNlcnAiDUp1c3RpbiBCaWViZXIqAggAMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQABiABDILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTIOEAAYgAQYsQMYgwEYigUyBRAAGIAEMg4QABiABBixAxiDARiKBTIaEC4YgAQYsQMYgwEYlwUY3AQY3gQY4ATYAQFItg5QAFgAcAB4AZABAJgBpgGgAaYBqgEDMC4xuAEByAEA-AEC-AEBmAIDoAL5GJgDAOIDBRIBMSBAugYGCAEQARgUkgcHMC4xLjctMqAHlQg&sclient=gws-wiz-serp">Justin
+                            Bieber</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/aw.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=alan+walker&sca_esv=289b83ef89ab5e90&sca_upv=1&sxsrf=ADLYWIK9cEb77VxZ_8UMt3Nk_kAsVZs-OQ%3A1720552752449&ei=MI2NZtWYG9WfnesP24Ku0Aw&gs_ssp=eJzj4tVP1zc0TKpIM0kuykkzYPTiTsxJzFMoT8zJTi0CAH18CSI&oq=Alan+Walker&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0FsYW4gV2Fsa2VyKgIIADINEC4YgAQYsQMYQxiKBTIQEC4YgAQYsQMYQxiDARiKBTINEAAYgAQYsQMYQxiKBTINEC4YgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEC4YgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEC4YgAQYQxiKBTIKEAAYgAQYQxiKBTIfEC4YgAQYsQMYQxiDARiKBRiXBRjcBBjeBBjgBNgBAUitClAAWABwAHgBkAEAmAHHAaABxwGqAQMwLjG4AQHIAQD4AQL4AQGYAgKgAtcHwgIcEC4YgAQYsQMYQxiKBRiXBRjcBBjeBBjfBNgBAZgDALoGBggBEAEYFJIHBzItMS41LTGgB-ET&sclient=gws-wiz-serp">Alan
+                            Walker</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/anurag.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=anurag+kulkarni&sca_esv=289b83ef89ab5e90&sca_upv=1&sxsrf=ADLYWIILABVq6Z-U-8kVnd6vEoc-4_gzqg%3A1720552775706&ei=R42NZsTrKoGMseMP25CNwAI&gs_ssp=eJzj4tVP1zc0TDYuL7E0yMszYPTiT8wrLUpMV8guzclOLMrLBACf9AqO&oq=Anurag+Kulakarni&gs_lp=Egxnd3Mtd2l6LXNlcnAiEEFudXJhZyBLdWxha2FybmkqAggAMg0QLhiABBixAxiDARgKMgcQABiABBgKMgcQABiABBgKMgcQLhiABBgKMgcQABiABBgKMgcQLhiABBgKMgoQLhiABBjUAhgKMgcQABiABBgKMgcQLhiABBgKMgcQLhiABBgKMhwQLhiABBixAxiDARgKGJcFGNwEGN4EGOAE2AEBSN8SUABYAHAAeAGQAQCYAagBoAGoAaoBAzAuMbgBAcgBAPgBAvgBAZgCAqAC2BOYAwC6BgYIARABGBSSBwcwLjEuOC0xoAefFQ&sclient=gws-wiz-serp">Anurag
+                            Kulakarni</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/mickey.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?q=mickey+j+meyer&sca_esv=289b83ef89ab5e90&sca_upv=1&sxsrf=ADLYWIK4QsvNPoV0LW6zLBY5NZMLuO82Kg%3A1720552801473&ei=YY2NZsDQHKOOseMP3Ny9qAk&oq=Mickey+J.Meyer&gs_lp=Egxnd3Mtd2l6LXNlcnAiDk1pY2tleSBKLk1leWVyKgIIADIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSMMUUABYAHAAeAGQAQCYAaMBoAGjAaoBAzAuMbgBAcgBAPgBAvgBAZgCAaACrAGYAwCSBwMwLjGgB9kF&sclient=gws-wiz-serp">Mickey
+                            J.Meyer</a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="singerimg">
+                        <img src="/assets/gv prakash.jpeg" alt="" class="pic">
+                        <img src="/assets/playbutton.png" class="playbutton">
+                        <a
+                            href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcwMo_PMDY0YPTiSi9TKChKzE4szgAAT2QHEA&q=gv+prakash&oq=gv+pra&gs_lcrp=EgZjaHJvbWUqDwgBEC4YQxixAxiABBiKBTISCAAQABhDGOMCGLEDGIAEGIoFMg8IARAuGEMYsQMYgAQYigUyBggCEEUYOTIMCAMQABhDGIAEGIoFMgoIBBAAGLEDGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgoICBAAGLEDGIAEMgcICRAAGIAE0gEJNjYwMGoxajE1qAIIsAIB&sourceid=chrome&ie=UTF-8"></a>
+                        <p>Artist</p>
+                    </div>
+        </div>
+
+            </div>
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/darshana.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio1"
+                            onclick="changeicon(this)">
+                        <audio id="audio1" src="/assets/darshana.mp3" preload="auto"></audio>
+                        <p class="card-title">Darshana</p>
+                        <h5>Hridayam</h5>
+                        <p class="card-info">
+                            Song: Hesham Abdul Wahab</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/bachelor.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio2"
+                            onclick="changeicon(this)">
+                        <audio id="audio2" src="/assets/Adiye.mp3" preload="auto"></audio>
+                        <p class="card-title">Adiye</p>
+                        <h5>Bachelor</h5>
+                        <p class="card-info">
+                            Song: Dhibu Ninan Thomas
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/sir.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio3"
+                            onclick="changeicon(this)">
+                        <audio id="audio3" src="/assets/3-Sirivennala.mp3" preload="auto"></audio>
+                        <p class="card-title">Sirivennala</p>
+                        <h5>Shyam Singha Roy</h5>
+                        <p class="card-info">
+                            Song: Anurag Kulakarni
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/i.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio4"
+                            onclick="changeicon(this)">
+                        <audio id="audio4" src="/assets/Nuvvunte Naa Jathagaa.mp3" preload="auto"></audio>
+                        <p class="card-title">Nuvvunte Naa Jathagaa</p>
+                        <h5>I Manoharudu</h5>
+                        <p class="card-info">
+                            Song: A.R.Rahaman
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/teenmaar.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio5"
+                            onclick="changeicon(this)">
+                        <audio id="audio5" src="/assets/Vayyarala.mp3" preload="auto"></audio>
+                        <p class="card-title">Vayyarala</p>
+                        <h5>Teenmaaar</h5>
+                        <p class="card-info">
+                            Song: Karunya
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/son.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio6"
+                            onclick="changeicon(this)">
+                        <audio id="audio6" src="/assets/Seethakaalam - SenSongsMp3.Co.mp3" preload="auto"></audio>
+                        <p class="card-title">Seethakaalam</p>
+                        <h5>Teenmaaar</h5>
+                        <p class="card-info">
+                            Song: Karunya
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/bhe.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio7"
+                            onclick="changeicon(this)">
+                        <audio id="audio7" src="/assets/Singles Anthem - SenSongsMp3.Co.mp3" preload="auto"></audio>
+                        <p class="card-title">Singles Anthem</p>
+                        <h5>Teenmaaar</h5>
+                        <p class="card-info">
+                            Song: Karunya
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/appudo.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio8"
+                            onclick="changeicon(this)">
+                        <audio id="audio8" src="/assets/Appudo Ippudo.mp3" preload="auto"></audio>
+                        <p class="card-title">Appudo Ippudo</p>
+                        <h5>Teenmaaar</h5>
+                        <p class="card-info">
+                            Song: Karunya
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/jawan.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio9"
+                            onclick="changeicon(this)">
+                        <audio id="audio9" src="/assets/jawan.mp3" preload="auto"></audio>
+                        <p class="card-title">Hayyoda</p>
+                        <h5>Teenmaaar</h5>
+                        <p class="card-info">
+                            Song: Karunya
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/hello.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio10"
+                            onclick="changeicon(this)">
+                        <audio id="audio10" src="/assets/Peddha Peddha Kallathoti.mp3" preload="auto"></audio>
+                        <p class="card-title">Peddha Peddha Kallathoti</p>
+                        <h5>Teenmaaar</h5>
+                        <p class="card-info">
+                            Song: Karunya
+                        </p>
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/devera.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio11"
+                            onclick="changeicon(this)">
+                        <audio id="audio11" src="/assets/Fear Song.mp3" preload="auto"></audio>
+                        <p class="card-title">Fear Song</p>
+                        <h5>Devara</h5>
+                        <p class="card-info">
+                            Song: Anirudh Ravichander
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="/assets/kalki.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio12"
+                            onclick="changeicon(this)">
+                        <audio id="audio12" src="/assets/Ta Takkara.mp3" preload="auto"></audio>
+                        <p class="card-title">Ta Takkara</p>
+                        <h5>Kalki 2898</h5>
+                        <p class="card-info">
+                            Song: Sanjith Hedge
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/hi nanna.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio13"
+                            onclick="changeicon(this)">
+                        <audio id="audio13" src="/assets/Samayama.mp3" preload="auto"></audio>
+                        <p class="card-title">Samayama</p>
+                        <h5>Hi Nanna</h5>
+                        <p class="card-info">
+                            Song: Anurag Kulakarni
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/animal2.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio14"
+                            onclick="changeicon(this)">
+                        <audio id="audio14" src="/assets/Evarevaro.mp3" preload="auto"></audio>
+                        <p class="card-title">Evarevaro</p>
+                        <p class="card-info">
+                            Song: Ed Sheeran
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/jannu.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio15"
+                            onclick="changeicon(this)">
+                        <audio id="audio15" src="/assets/The Life Of Ram - SenSongsMp3.Co.mp3" preload="auto"></audio>
+                        <p class="card-title">The Life Of Ram</p>
+                        <p class="card-info">
+                            Song: Arctic Monkeys
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/psycho.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio16"
+                            onclick="changeicon(this)">
+                        <audio id="audio16" src="/assets/Psycho Saiyaan.mp3" preload="auto"></audio>
+                        <p class="card-title">Psycho Saiyaan</p>
+                        <p class="card-info">
+                            Song: Arctic Monkeys
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/animal1.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio17"
+                            onclick="changeicon(this)">
+                        <audio id="audio17" src="/assets/Ammayi.mp3" preload="auto"></audio>
+                        <p class="card-title">Ammayi</p>
+                        <p class="card-info">
+                            Song: Arctic Monkeys
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/guntur.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio18"
+                            onclick="changeicon(this)">
+                        <audio id="audio18" src="/assets/Mawaa Enthaina.mp3" preload="auto"></audio>
+                        <p class="card-title">Mawaa Enthaina</p>
+                        <p class="card-info">
+                            Song: Arctic Monkeys
+                        </p>
+                    </div>
+
+                </div>
+                <h2>Recommended for Today</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/oori peri bhairavakona.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio19"
+                            onclick="changeicon(this)">
+                        <audio id="audio19" src="/assets/Nijame Ne Chebuthunna.mp3" preload="auto"></audio>
+                        <p class="card-title">Nijame Ne Chebuthunna</p>
+                        <h5>Oori Peru Bhairavakona</h5>
+                        <p class="card-info">
+                            Song: Sid Sriram
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/panjaa.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio20"
+                            onclick="changeicon(this)">
+                        <audio id="audio20" src="/assets/Panja.mp3" preload="auto"></audio>
+                        <p class="card-title">Panjaa</p>
+                        <h5>Panjaa</h5>
+                        <p class="card-info">
+                            Song: Yuvan Shankar Raja
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/padipadi.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio21"
+                            onclick="changeicon(this)">
+                        <audio id="audio21" src="/assets/Padi Padi Leche.mp3" preload="auto"></audio>
+                        <p class="card-title">Padi Padi Leche</p>
+                        <h5>Padi Padi Leche Manasu</h5>
+                        <p class="card-info">
+                            Song: Hanu Ragavapudi
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/mr nookaya.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio22"
+                            onclick="changeicon(this)">
+                        <audio id="audio22" src="/assets/Oke Oka Jeevitham.mp3" preload="auto"></audio>
+                        <p class="card-title">Oke Oka Jeevitham</p>
+                        <h5>Mr Nookaya</h5>
+                        <p class="card-info">
+                            Song: Haricharan
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/hoyna.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio23"
+                            onclick="changeicon(this)">
+                        <audio id="audio23" src="/assets/Hoyna Hoyna - SenSongsMp3.Co.mp3" preload="auto"></audio>
+                        <p class="card-title">Hoyna Hoyna</p>
+                        <h5>Ra One</h5>
+                        <p class="card-info">
+                            Song: Akon
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/orange.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio24"
+                            onclick="changeicon(this)">
+                        <audio id="audio24" src="/assets/Hello Rammante.mp3" preload="auto"></audio>
+                        <p class="card-title">Hello Rammante</p>
+                        <h5>Ra One</h5>
+                        <p class="card-info">
+                            Song: Akon
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/velli.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio25"
+                            onclick="changeicon(this)">
+                        <audio id="audio25" src="/assets/Vellipomaake-SenSongsMp3.Com.mp3" preload="auto"></audio>
+                        <p class="card-title">Vellipomaake</p>
+                        <h5>Ra One</h5>
+                        <p class="card-info">
+                            Song: Akon
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/jalsa.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio26"
+                            onclick="changeicon(this)">
+                        <audio id="audio26" src="/assets/Gaallo Thelinattunde.mp3" preload="auto"></audio>
+                        <p class="card-title">Gaallo Thelinattunde</p>
+                        <h5>Ra One</h5>
+                        <p class="card-info">
+                            Song: Akon
+                        </p>
+                    </div>
+                </div>
+                <h2>English Songs</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/perfect.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio27"
+                            onclick="changeicon(this)">
+                        <audio id="audio27" src="/assets/Perfect.mp3" preload="auto"></audio>
+                        <p class="card-title">Perfect</p>
+                        <p class="card-info">
+                            Song: Ed Sheeran
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/wanna.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio28"
+                            onclick="changeicon(this)">
+                        <audio id="audio28" src="/assets/I-Wanna-Be-Yours.mp3" preload="auto"></audio>
+                        <p class="card-title">I Wanna Be Yours</p>
+                        <p class="card-info">
+                            Song: Arctic Monkeys
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/baby.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio29"
+                            onclick="changeicon(this)">
+                        <audio id="audio29" src="/assets/Baby_320(PaglaSongs).mp3" preload="auto"></audio>
+                        <p class="card-title">Baby</p>
+                        <p class="card-info">
+                            Song: Justin Bieber
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/summer.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio30"
+                            onclick="changeicon(this)">
+                        <audio id="audio30" src="/assets/Summertime-Sadness_320(PagalWorld).mp3" preload="auto"></audio>
+                        <p class="card-title">Summertime</p>
+                        <p class="card-info">
+                            Song: Lana Del Rey
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/shape.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio31"
+                            onclick="changeicon(this)">
+                        <audio id="audio31" src="/assets/Shape-of-you-(Slowed---reverb)_320(PagalWorld).mp3"
+                            preload="auto"></audio>
+                        <p class="card-title">Shape Of You</p>
+                        <p class="card-info">
+                            Song: Ed Sheeran
+                        </p>
+                    </div>
+                </div>
+                <h2>Popular Albums</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/vikram.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio32"
+                            onclick="changeicon(this)">
+                        <audio id="audio32" src="/assets/Wasted.mp3" preload="auto"></audio>
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/galli.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio33"
+                            onclick="changeicon(this)">
+                        <audio id="audio33" src="/assets/Gaali Vaaluga.mp3" preload="auto"></audio>
+                        <p class="card-title">Gaali Vaaluga</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/ninnu.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio34"
+                            onclick="changeicon(this)">
+                        <audio id="audio34" src="/assets/Ninnu Chuse Anandamlo - SenSongsMp3.Co.mp3"
+                            preload="auto"></audio>
+                        <p class="card-title">Hello Rammante</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/bad.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio35"
+                            onclick="changeicon(this)">
+                        <audio id="audio35" src="/assets/Bad Boy.mp3" preload="auto"></audio>
+                        <p class="card-title">Bad Boy</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/arjun reddy.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio36"
+                            onclick="changeicon(this)">
+                        <audio id="audio36" src="/assets/Telisiney Na Nuvvey.mp3" preload="auto"></audio>
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/aavesh.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio37"
+                            onclick="changeicon(this)">
+                        <audio id="audio37" src="/assets/Illuminati.mp3" preload="auto"></audio>
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/ra one.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio38"
+                            onclick="changeicon(this)">
+                        <audio id="audio38" src="/assets/Chammak Challo.mp3" preload="auto"></audio>
+                        <p class="card-title">Chammak Challo</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="/assets/card4img.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio39"
+                            onclick="changeicon(this)">
+                        <audio id="audio39" src="/assets/Naa-Ready.mp3" preload="auto"></audio>
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+                </div>
+                <h2>Featured charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/card5img.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio17"
+                            onclick="changeicon(this)">
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/card6img.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio17"
+                            onclick="changeicon(this)">
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/card1img.jpeg" alt="" class="card-img">
+                        <img src="/assets/playbutton.png" class="playbutton" data-audio-id="audio17"
+                            onclick="changeicon(this)">
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">
+                            Your daily update of the most played tracks right...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+            <div class="credits">
+                <div class="creditrows">
+                    <h3>Company</h3>
+                    <p>About</p>
+                    <p>Jobs</p>
+                    <p>For the Record</p>
+                </div>
+                <div class="creditrows">
+                    <h3>Communities</h3>
+                    <p>For Artist</p>
+                    <p>Developers</p>
+                    <p>Advertising</p>
+                    <p>Investors</p>
+                    <p>Vendors</p>
+                </div>
+                <div class="creditrows">
+                    <h3>Useful links</h3>
+                    <p>Support</p>
+                    <p>Free Mobile App</p>
+                </div>
+                <div class="creditrows">
+                    <h3>Spotify Plans</h3>
+                    <p>Premium Individual</p>
+                    <p>Premium Duo</p>
+                    <p>Premium Family</p>
+                    <p>Premium Student</p>
+                    <p>Spotify Free</p>
+                </div>
+                <div class="creditrows">
+                    <div class="crediticons">
+                        <a href="https://www.instagram.com/spotify/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/spotify/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/spotify/"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+            <h5 style="font-weight: 200;">© 2024 Spotify AB</h5>
+            <br><br><br><br><br><br>
+        </div>
+        <div class="music-player hidex">
+            <div class="album">
+                <img src="/assets/darshana.jpeg" alt="" class="alb">
+                <div class="song">
+                    <p class="song-name" class="name">Darshana</p>
+                    <a href="#" class="singer">Hesham Abdul Wahab</a>
+                </div>
+                <div class="like">
+                    <img src="/assets/like1.png" alt="" class="liked">
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="assets/player_icon1.png" alt="" class="player-control-icon">
+                    <img src="assets/player_icon2.png" alt="" class="player-control-icon backward">
+                    <img src="assets/player_icon3.png" alt="" class="player-control-icon" id="footerPlayPause" style="opacity: 1;">
+                    <img src="assets/player_icon4.png" alt="" class="player-control-icon forward">
+                    <img src="assets/player_icon5.png" alt="" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">04:23</span>
+                </div>
+            </div>
+            <div class="controls hidex">
+                <img src="/assets/icons8-video-48 (1).png" alt="">
+                <img src="/assets/icons8-mic-48.png" alt="">
+                <img src="/assets/icons8-menu-64.png" alt="">
+                <img src="/assets/device.png" alt="">
+                <span class="material-symbols-outlined controls-icon  volumeup" style="margin-right: 0;">volume_up</span>
+                <div class="volume">
+                    <input type="range" min="0" max="100" class="vol" step="10" id="volumeControl">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
